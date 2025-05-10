@@ -29,3 +29,15 @@ def judgeCircle(self, moves: str) -> bool:
     if h == 0 and v == 0:
         return True
     return False
+
+moves = "UD"
+res = judgeCircle(moves)
+print(res)  # Output: True
+
+moves = "LL"
+res = judgeCircle(moves)
+print(res)  # Output: False
+
+moves = "RRDD"
+res = judgeCircle(moves)
+print(res)  # Output: False
