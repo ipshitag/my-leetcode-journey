@@ -9,7 +9,10 @@ Note:
     R: Right
     
     For every move, we can increase or decrease the values of horizontal and vertical coordinates.
-    If the robot returns to the origin, then both values should be 0."""
+    If the robot returns to the origin, then both values should be 0.
+    
+    Time complexity: O(N)
+    Space complexity: O(1)"""
 
 def judgeCircle(self, moves: str) -> bool:
     # define 2 values, one for horizontal, one for vertical
