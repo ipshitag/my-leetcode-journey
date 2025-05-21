@@ -1,3 +1,4 @@
+# Solution
 def minimumRecolors(self, blocks: str, k: int) -> int:
     n = len(blocks)
     if n == 0 or k == 0:
