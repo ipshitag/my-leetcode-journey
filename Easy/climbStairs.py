@@ -1,8 +1,17 @@
+"""
+Note:
+    This is a dynamic programming problem.
+    The number of ways to reach the nth step is the sum of the number of ways to reach the (n-1)th step and the (n-2)th step.
+    This is because you can reach the nth step by taking a single step from (n-1)th step or a double step from (n-2)th step.
+    So, we can use a bottom-up approach to solve this problem.
+
+    Space Complexity:
+    O(1) because we are using only two variables to store the number of ways to reach the (n-1)th and (n-2)th steps.
+
+    Time Complexity:
+    O(n) because we are iterating from 3 to n to calculate the number of ways to reach the nth step.
+"""
 def climbStairs(n: int) -> int:
-    """
-    Given an integer n, return the number of distinct ways to climb to the top of the staircase.
-    Each time you can either climb 1 or 2 steps. In other words, you can take either a single step or a double step.
-    """
     if n <= 2:
         return n
     first = 1
