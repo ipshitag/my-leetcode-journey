@@ -22,7 +22,7 @@ def findTheDifference(s: str, t: str) -> str:
     return chr(res)
 
 s = "abcd"
-t = "abcd"
+t = "abcde"
 res = findTheDifference(s, t)
 print(res)  # expected: "e"
 
